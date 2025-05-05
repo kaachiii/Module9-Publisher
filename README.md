@@ -19,3 +19,8 @@
 ![Sending and processing event.](images/Screenshot%202025-05-06%20015730.png)
 
 Pada kedua gambar di atas, publisher mengirimkan 5 event ke message broker. Event-event tersebut kemudian diproses oleh subscriber. Akibatnya, di RabbitMQ akan terlihat penambahan pada bagian connections, channels, queues, dan consumers, sesuai dengan aktivitas pengiriman dan penerimaan pesan.
+
+### Commit Monitoring chart based on publisher.
+![Monitoring chart based on publisher](images/Screenshot%202025-05-06%20020342.png)
+
+Lonjakan message rates terjadi ketika publisher sering mengirim pesan ke message broker. Tingginya message rate menunjukkan bahwa broker menerima banyak pesan dalam waktu singkat. 
