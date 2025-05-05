@@ -10,8 +10,12 @@
 
     URL "amqp://guest:guest@localhost:5672" yang sama dipakai di subscriber berarti publisher dan subscriber terhubung ke server RabbitMQ yang sama, yaitu: di komputer lokal (karena localhost), menggunakan username = 'guest' dan password = 'guest', melalui port 5672 (port standar amqp). Artinya, publisher (pengirim pesan) dan subscriber (penerima pesan) berkomunikasi melalui broker yang sama.
 
+### Commit Running RabbitMQ as message broker.
 ![Running RabbitMQ as message broker.](images/Screenshot%202025-05-06%20015107.png)
 
+### Commit Sending and processing event.
 ![Sending and processing event.](images/Screenshot%202025-05-06%20015639.png)
 
 ![Sending and processing event.](images/Screenshot%202025-05-06%20015730.png)
+
+Pada kedua gambar di atas, publisher mengirimkan 5 event ke message broker. Event-event tersebut kemudian diproses oleh subscriber. Akibatnya, di RabbitMQ akan terlihat penambahan pada bagian connections, channels, queues, dan consumers, sesuai dengan aktivitas pengiriman dan penerimaan pesan.
